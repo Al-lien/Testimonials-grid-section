@@ -1,0 +1,31 @@
+/* CSS RESET */
+*,
+*::after,
+*::before {    
+    box-sizing: inherit;   
+    margin: 0;    
+    padding: 0; 
+  }
+
+  body {
+    box-sizing: border-box;
+    
+    /* Body fit 100% of the html*/
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+    /* Center main inside body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Background */
+    background-color: $Light-grayish-blue;
+
+
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,56 @@
+.card {
+    border-radius: 8px;
+    margin: 0.9rem 0;
+    padding: 30px;
+    text-align: left;
+
+    width: 100%;
+    height: max-content;
+
+    @include card-background-color($card-background-color);
+
+    &__header {
+        display: inline-flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+
+        &__img {
+            max-width: 2rem;
+            border-radius: 100px;
+            border: 1px solid white;
+        }
+
+        &__heading {
+            margin-left: 20px;
+
+            &__status {
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+    &__review {
+        font-weight: nth($fw, 2);
+        font-size: 1.265rem;
+        margin: 1rem 0;
+        line-height: 1.5rem;
+    }
+
+    &__quote {
+        font-weight: nth($fw, 1);
+        font-size: 0.85rem;
+        line-height: 1.2rem;
+        opacity: 0.7;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .card {
+        width: auto;
+        height: 100%;
+        margin: 0;
+    }       
+}

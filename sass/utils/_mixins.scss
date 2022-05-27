@@ -1,0 +1,8 @@
+@mixin card-background-color($palettes){
+    @each $name, $color in $palettes{
+        &--#{$name}{
+            background: map-get($color, bg);
+            color: map-get($color, text-color);
+        }
+    }
+}
